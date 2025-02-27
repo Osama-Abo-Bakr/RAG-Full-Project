@@ -91,7 +91,7 @@ def create_index(index_name):
     if index_name not in existing_indexes:
         pc.create_index(
             name=index_name,
-            dimension=1536,
+            dimension=768,
             metric="cosine",
             spec=ServerlessSpec(cloud="aws", region="us-east-1"),
         )
